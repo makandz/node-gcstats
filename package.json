@@ -1,6 +1,6 @@
 {
   "name": "@makandz/gc-stats",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "Exposes node v8 garbage collection stats",
   "main": "index.js",
   "repository": {
@@ -30,6 +30,13 @@
     "mocha": "^6.2.3",
     "semver": "^5.7.0",
     "should": "^13.2.3"
+  },
+  "binary": {
+    "module_name": "gcstats",
+    "module_path": "./build/{module_name}/v{version}/{configuration}/{node_abi}-{platform}-{arch}/",
+    "remote_path": "./{module_name}/v{version}/{configuration}/",
+    "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
+    "host": "https://github.com/makandz/node-gcstats/archive/refs/tags/"
   },
   "bugs": {
     "url": "https://github.com/makandz/node-gcstats/issues"
