@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "nan": "^2.13.2",
-    "node-pre-gyp": "^0.13.0"
+    "node-pre-gyp": "^0.17.0"
   },
   "gypfile": true,
   "devDependencies": {
@@ -37,5 +37,8 @@
     "remote_path": "./{module_name}/v{version}/{configuration}/",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
     "host": "https://node-binaries.s3.amazonaws.com"
-  }
+  },
+  "bundleDependencies": [
+    "node-pre-gyp"
+  ]
 }
